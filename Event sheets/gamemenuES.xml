@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gamemenuES</name>
+    <events>
+        <variable constant="0" name="index" sid="949627691401272" static="0" type="number">0</variable>
+        <variable constant="0" name="max_dialog" sid="800159555670267" static="0" type="number">50</variable>
+        <variable constant="0" name="framegame" sid="630346717941102" static="0" type="number">0</variable>
+        <event-block sid="719366462068352">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="151785638066910" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="377794686876717" type="Array" />
+                <action id="-9" name="Set value" sid="567456430003412" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="727470112133341" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530472546583066">
+            <conditions>
+                <condition id="17" name="On tap object" sid="384839093271743" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_kanan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="969517297893588" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="999399267747365">
+            <conditions>
+                <condition id="17" name="On tap object" sid="193809814068662" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_kiri</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="647778313960229" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698993994870041">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="253340068370227" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="882227615660566">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="728668390232976" type="System">
+                            <param id="0" name="Variable">framegame</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="438928006826899" type="System">
+                            <param id="0" name="Variable">framegame</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879945274100890">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="826621459440176" type="System">
+                            <param id="0" name="Variable">framegame</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="690356282473054" type="System">
+                            <param id="0" name="Variable">framegame</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="488715889771342">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="380728690041380" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="970670460858860" type="menugame_menu">
+                    <param id="0" name="Frame number">framegame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181038720248075">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="878362230584590" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="340649607348150" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="777925725447949">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="132258760952194" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="578800230689206" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="935415097948067">
+            <conditions>
+                <condition id="17" name="On tap object" sid="377321057479718" type="Touch">
+                    <param id="0" name="Object">menugame_button_mulai</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="473125281664476" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="445835993722441" type="AJAX">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                    <param id="1" name="File">nohoax.txt</param>
+                </action>
+                <action id="-9" name="Set value" sid="964960755021784" type="System">
+                    <param id="0" name="Variable">titleatasgame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="204851385359876" type="System">
+                    <param id="0" name="Variable">framemaskot</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="142487902264005">
+            <conditions>
+                <condition id="17" name="On tap object" sid="709161510875820" type="Touch">
+                    <param id="0" name="Object">menugame_button_mulai</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="888020880835533" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="807495348484445" type="AJAX">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                    <param id="1" name="File">Money Politic.txt</param>
+                </action>
+                <action id="-9" name="Set value" sid="624877472790700" type="System">
+                    <param id="0" name="Variable">titleatasgame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="570824748588622" type="System">
+                    <param id="0" name="Variable">framemaskot</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="389899800259510">
+            <conditions>
+                <condition id="17" name="On tap object" sid="325027909372935" type="Touch">
+                    <param id="0" name="Object">menugame_button_mulai</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="193784708196787" type="System">
+                    <param id="0" name="Variable">framegame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="349828745101446" type="AJAX">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                    <param id="1" name="File">kenali calon.txt</param>
+                </action>
+                <action id="-9" name="Set value" sid="308197044114378" type="System">
+                    <param id="0" name="Variable">titleatasgame</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="493872434850310" type="System">
+                    <param id="0" name="Variable">framemaskot</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347974480002821">
+            <conditions>
+                <condition id="17" name="On tap object" sid="684018895758406" type="Touch">
+                    <param id="0" name="Object">menugame_button_mulai</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="748950456939250" type="Audio">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="148219160919695" type="Audio">
+                    <param id="0" name="Audio file">bensound-acousticbreeze</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;game&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="870624536491390" type="Audio">
+                    <param id="0" name="Tag">&quot;all&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137605727686395">
+            <conditions>
+                <condition id="0" name="On completed" sid="555108813494538" type="AJAX">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="686637172536300" type="Function">
+                    <param id="0" name="Name">&quot;game&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="162426510864198">
+            <conditions>
+                <condition id="0" name="On function" sid="187194326236103" type="Function">
+                    <param id="0" name="Name">&quot;game&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="410309794583114">
+                    <conditions>
+                        <condition id="-10" name="For" sid="924686804940583" type="System">
+                            <param id="0" name="Name">&quot;game&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">max_dialog - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="991313742042271" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="242140324508525" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="602494157533374" type="System">
+                            <param id="0" name="Layout">game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="510627389747953">
+            <conditions>
+                <condition id="17" name="On tap object" sid="352307544681944" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="747381624864177" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="348700784225457">
+            <conditions>
+                <condition id="17" name="On tap object" sid="454888184783280" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="511274078466214" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

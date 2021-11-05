@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">menugamegame</layout>
+        <layout order="2">home</layout>
+        <layout order="4">game</layout>
+        <event-sheet order="0">gamemenuES</event-sheet>
+        <event-sheet order="3">homeES</event-sheet>
+        <event-sheet active="1" order="5">gameES</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="button" />
+        <family expanded="0" name="homebutton" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/MENUENS_RITTLE/" />
+        <folder expanded="1" path="animation-folder/menugame_button_mulai/" />
+        <folder expanded="1" path="animation-folder/MENUENS_bottom/" />
+        <folder expanded="1" path="animation-folder/MENUENS_button_kanan/" />
+        <folder expanded="1" path="animation-folder/MENUENS_button_kiri/" />
+        <folder expanded="1" path="animation-folder/MENUENS_AR/" />
+        <folder expanded="1" path="animation-folder/MENUENS_button_baca/" />
+        <folder expanded="1" path="animation-folder/menugame_menu/" />
+        <folder expanded="1" path="animation-folder/menugame_title/" />
+        <folder expanded="1" path="animation-folder/home_bg/" />
+        <folder expanded="1" path="animation-folder/home_board/" />
+        <folder expanded="1" path="animation-folder/home_board2/" />
+        <folder expanded="1" path="animation-folder/home_button/" />
+        <folder expanded="1" path="animation-folder/home_button2/" />
+        <folder expanded="1" path="animation-folder/home_button3/" />
+        <folder expanded="1" path="animation-folder/home_button4/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/m1/" />
+        <folder expanded="1" path="animation-folder/m2/" />
+        <folder expanded="1" path="animation-folder/m3/" />
+        <folder expanded="1" path="animation-folder/m4/" />
+        <folder expanded="1" path="animation-folder/kananslide/" />
+        <folder expanded="1" path="animation-folder/kirislide/" />
+        <folder expanded="1" path="animation-folder/game_bottomboard/" />
+        <folder expanded="1" path="animation-folder/game_dialogboard/" />
+        <folder expanded="1" path="animation-folder/game_title_nohoax/" />
+        <folder expanded="1" path="animation-folder/game_back/" />
+        <folder expanded="1" path="animation-folder/game_ansboard/" />
+        <folder expanded="1" path="animation-folder/game_title_tatacara/" />
+        <folder expanded="1" path="animation-folder/game_bottomwhennoquestioninvisualstorygameplay/" />
+        <folder expanded="1" path="animation-folder/button_home/" />
+        <folder expanded="1" path="animation-folder/button_back/" />
+        <folder expanded="1" path="animation-folder/gae_title_kenalicalon/" />
+        <folder expanded="1" path="animation-folder/ens_title/" />
+        <folder expanded="1" path="animation-folder/ens_board/" />
+        <folder expanded="1" path="animation-folder/maskot_ensiklopedia/" />
+        <folder expanded="1" path="animation-folder/maskot_tatacara/" />
+        <folder expanded="1" path="animation-folder/button_play/" />
+        <folder expanded="1" path="animation-folder/button_home2/" />
+        <folder expanded="1" path="animation-folder/maskot_nohoax2/" />
+        <folder expanded="1" path="animation-folder/daftarPustaka_title/" />
+        <folder expanded="1" path="animation-folder/about_button/" />
+        <folder expanded="1" path="animation-folder/about_bg/" />
+        <folder expanded="1" path="animation-folder/about_title/" />
+        <folder expanded="1" path="animation-folder/about_/" />
+        <folder expanded="1" path="animation-folder/about_2/" />
+        <folder expanded="1" path="animation-folder/about_3/" />
+        <folder expanded="1" path="animation-folder/about_text/" />
+        <folder expanded="1" path="animation-folder/game_title_tatacara2/" />
+    </folders-expanded>
+</c2uistate>

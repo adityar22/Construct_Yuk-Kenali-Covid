@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ensiES</name>
+    <events>
+        <variable constant="0" name="endline" sid="627583282121902" static="0" type="number">0</variable>
+        <variable constant="0" name="dialogens" sid="367863478717134" static="0" type="number">0</variable>
+        <event-block sid="279128663244814">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="746749525406312" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="382106757732215" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="912959288529246" type="Function">
+                    <param id="0" name="Name">&quot;dialogens&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="245537459571681">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="477273736601903" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="612380022308391" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="221573672926520">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="688055310912906" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="278230949524489" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="796310033617088">
+            <conditions>
+                <condition id="0" name="On function" sid="995403436847419" type="Function">
+                    <param id="0" name="Name">&quot;dialogens&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="311843065483389">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="529085877842510" type="System">
+                            <param id="0" name="Interval (seconds)">0.002</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="249320583984749" type="aikpu">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(0),dialogens,&quot;;&quot;)), len(aikpu.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979511745256602">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="312037436554426" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="865454472069241" type="System">
+                    <param id="0" name="Variable">endline</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(0),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Call function" sid="623756821661678" type="Function">
+                    <param id="0" name="Name">&quot;dialogens&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="953829860048746">
+            <conditions>
+                <condition id="17" name="On tap object" sid="476539306066961" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="921151602845725" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596771005016969">
+            <conditions>
+                <condition id="17" name="On tap object" sid="905836093815552" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="222136366771610" type="System">
+                    <param id="0" name="Layout">menuensiklo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615342074260090">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="907638832909183" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="205818779880757" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="149615843889071" type="System">
+                    <param id="0" name="Group name">&quot;prev&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108370161555942">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="779414544210830" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="175816109483756" type="System">
+                    <param id="0" name="Group name">&quot;prev&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155455024500781">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="613397350026606" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">endline</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="352314334786036" type="System">
+                    <param id="0" name="Group name">&quot;next&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808653789148148">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="868159053154358" type="System">
+                    <param id="0" name="Variable">dialogens</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">endline</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="469075839967402" type="System">
+                    <param id="0" name="Group name">&quot;next&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="680570795804971" title="prev">
+            <sub-events>
+                <event-block sid="637723399827777">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="566362697275283" type="Touch">
+                            <param id="0" name="Object">MENUENS_button_kiri</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="755447395279212" type="aikpu">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="190972935031620" type="System">
+                            <param id="0" name="Variable">dialogens</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="971853298207560" title="next">
+            <sub-events>
+                <event-block sid="482952949693114">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="701539551671171" type="Touch">
+                            <param id="0" name="Object">MENUENS_button_kanan</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="989323144837237" type="aikpu">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="866291600471708" type="System">
+                            <param id="0" name="Variable">dialogens</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="873550998509050">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="551708381044787" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="653578359443997" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="616946949872498" type="System">
+                    <param id="0" name="Variable">dialog_end</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="137736397845997" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

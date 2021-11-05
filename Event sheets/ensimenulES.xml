@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ensimenulES</name>
+    <events>
+        <variable constant="0" name="frameArtikel" sid="406120377563492" static="0" type="number">0</variable>
+        <event-block sid="483364935284600">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="706868640776296" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="512413259667226" type="Array" />
+                <action id="-9" name="Set value" sid="766420953881062" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="343535989724471" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="687181908961429">
+            <conditions>
+                <condition id="17" name="On tap object" sid="174103604446899" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_kanan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="389074738602733" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="865997552539880">
+            <conditions>
+                <condition id="17" name="On tap object" sid="325237065737716" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_kiri</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="362033991423096" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808520606632592">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="735663201293287" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="180609467712633">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="888091630370792" type="System">
+                            <param id="0" name="Variable">frameArtikel</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="220481079898650" type="System">
+                            <param id="0" name="Variable">frameArtikel</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="860871893283359">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="957350131143097" type="System">
+                            <param id="0" name="Variable">frameArtikel</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="879464113892431" type="System">
+                            <param id="0" name="Variable">frameArtikel</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="447097465220236">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="236139794597983" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="521012577797722" type="MENUENS_AR">
+                    <param id="0" name="Frame number">frameArtikel</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="576662586118416">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="312613824109067" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="611889330110188" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="745760661606757">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="434422134849774" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="924713257798001" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="802045848780057">
+            <conditions>
+                <condition id="17" name="On tap object" sid="252657347744868" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_baca</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="149669760217944" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="564549421082732" type="AJAX">
+                    <param id="0" name="Tag">&quot;ens&quot;</param>
+                    <param id="1" name="File">kilas balik.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="912672586368200">
+            <conditions>
+                <condition id="17" name="On tap object" sid="559155728693029" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_baca</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="419751149199529" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="246169721347993" type="AJAX">
+                    <param id="0" name="Tag">&quot;ens&quot;</param>
+                    <param id="1" name="File">apa itu kpu.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="720757723232121">
+            <conditions>
+                <condition id="17" name="On tap object" sid="765380764963292" type="Touch">
+                    <param id="0" name="Object">MENUENS_button_baca</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="745008372535624" type="System">
+                    <param id="0" name="Variable">frameArtikel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="441146809594656" type="AJAX">
+                    <param id="0" name="Tag">&quot;ens&quot;</param>
+                    <param id="1" name="File">kenapa harus memilih.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573066797699524">
+            <conditions>
+                <condition id="0" name="On completed" sid="158232574464399" type="AJAX">
+                    <param id="0" name="Tag">&quot;ens&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="180213456669192" type="Function">
+                    <param id="0" name="Name">&quot;ens&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237616607556374">
+            <conditions>
+                <condition id="0" name="On function" sid="948852835203546" type="Function">
+                    <param id="0" name="Name">&quot;ens&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="524353306878958">
+                    <conditions>
+                        <condition id="-10" name="For" sid="929479235040594" type="System">
+                            <param id="0" name="Name">&quot;ens&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">max_dialog - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="343510666991757" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="442979160149641" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="241336415205261" type="System">
+                            <param id="0" name="Layout">ensi</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="810394858198581">
+            <conditions>
+                <condition id="17" name="On tap object" sid="502493947799965" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="904409779058944" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="561007793399113">
+            <conditions>
+                <condition id="17" name="On tap object" sid="723623039885975" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="568448411261242" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>homeES</name>
+    <events>
+        <variable constant="0" name="move" sid="266668309446700" static="0" type="number">0</variable>
+        <event-block sid="363716746943448">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="568125295981606" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="827510327955166" type="home_button">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="970042387201670" type="home_button2">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="336339564262990" type="home_button3">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="310013808582917" type="home_button4">
+                    <param id="0" name="Object">Sprite</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="777374512542242">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="382639001249853" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="281033270764901" type="Sprite">
+                    <param id="0" name="X">lerp(Sprite.X, m1.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="200506371719883">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="580397195681127" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="163549831412489" type="Sprite">
+                    <param id="0" name="X">lerp(Sprite.X, m2.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="408524263470709">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="274690957317496" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="183814296480976" type="Sprite">
+                    <param id="0" name="X">lerp(Sprite.X, m3.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="825639158514577">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="854526872322648" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="584923802877767" type="Sprite">
+                    <param id="0" name="X">lerp(Sprite.X, m4.X, 0.08)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="733074457676310">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="176759083412734" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="297763952033646" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="614013870400893" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="725575138734535">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="962608893542770" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="866988912757892" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="196511658505632" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546779631791833">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="631627913200465" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="592860796661080" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359806757707124">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="495803364469981" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="250890952124879" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="153346094467133">
+            <conditions>
+                <condition id="17" name="On tap object" sid="184583802143382" type="Touch">
+                    <param id="0" name="Object">kananslide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="256955868438193" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263199557558304">
+            <conditions>
+                <condition id="17" name="On tap object" sid="859365006209048" type="Touch">
+                    <param id="0" name="Object">kirislide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="423873631891274" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="652800949296245">
+            <conditions>
+                <condition id="17" name="On tap object" sid="222088673376590" type="Touch">
+                    <param id="0" name="Object">kirislide</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="302534376535074" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="858004988268843" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="288935283960311">
+            <conditions>
+                <condition id="17" name="On tap object" sid="152795734555833" type="Touch">
+                    <param id="0" name="Object">kananslide</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="159188913475615" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="815991816922134" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="309247346074280">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="330300154165536" type="home_button">
+                    <param id="0" name="Object">m1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="362073657447012" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="545831777818953">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="268814786081163" type="home_button">
+                    <param id="0" name="Object">m2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="983513186810596" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137193550930869">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="441071785175712" type="home_button">
+                    <param id="0" name="Object">m3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="973301830172814" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="825499551625450">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="635195193187138" type="home_button">
+                    <param id="0" name="Object">m4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="285080275908437" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="819820351996353">
+            <conditions>
+                <condition id="17" name="On tap object" sid="535928359623233" type="Touch">
+                    <param id="0" name="Object">home_button</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="984009274967619" type="m1">
+                    <param id="0" name="Object">home_button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="802297681296946" type="System">
+                    <param id="0" name="Layout">menuensiklo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="268119646052337">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="166015106154906">
+            <conditions>
+                <condition id="17" name="On tap object" sid="194665307007060" type="Touch">
+                    <param id="0" name="Object">home_button3</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="114181420044127" type="m1">
+                    <param id="0" name="Object">home_button3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="718708917703907" type="System">
+                    <param id="0" name="Layout">menugamegame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="463292931935295">
+            <conditions>
+                <condition id="17" name="On tap object" sid="568921438906869" type="Touch">
+                    <param id="0" name="Object">home_button4</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="962812842829794" type="m1">
+                    <param id="0" name="Object">home_button4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="832469849401607" type="AJAX">
+                    <param id="0" name="Tag">&quot;daftar&quot;</param>
+                    <param id="1" name="File">referensi.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="644382509785293">
+            <conditions>
+                <condition id="17" name="On tap object" sid="190339645102997" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="869886314378220" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="696536762353879">
+            <conditions>
+                <condition id="17" name="On tap object" sid="827704604177702" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="794604500336562" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878730463478214">
+            <conditions>
+                <condition id="17" name="On tap object" sid="210726590250016" type="Touch">
+                    <param id="0" name="Object">home_button2</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="381506124728651" type="m1">
+                    <param id="0" name="Object">home_button2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="192756424664144" type="AJAX">
+                    <param id="0" name="Tag">&quot;tatacara&quot;</param>
+                    <param id="1" name="File">tata cara.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570423871983030">
+            <conditions>
+                <condition id="0" name="On completed" sid="267636789768647" type="AJAX">
+                    <param id="0" name="Tag">&quot;tatacara&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="355947081633446" type="Function">
+                    <param id="0" name="Name">&quot;tatacara&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277962210537150">
+            <conditions>
+                <condition id="0" name="On completed" sid="486431548180990" type="AJAX">
+                    <param id="0" name="Tag">&quot;daftar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="111247343920661" type="Function">
+                    <param id="0" name="Name">&quot;daftar&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="448380872584189">
+            <conditions>
+                <condition id="0" name="On function" sid="906331469691688" type="Function">
+                    <param id="0" name="Name">&quot;tatacara&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="537924967917007">
+                    <conditions>
+                        <condition id="-10" name="For" sid="821387399436605" type="System">
+                            <param id="0" name="Name">&quot;tatacara&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">max_dialog - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="653617633714646" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="445742156398511" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="323947403306086" type="System">
+                            <param id="0" name="Layout">tatacara</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="390660765402574">
+            <conditions>
+                <condition id="0" name="On function" sid="964853992761497" type="Function">
+                    <param id="0" name="Name">&quot;daftar&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="301068152168112">
+                    <conditions>
+                        <condition id="-10" name="For" sid="159696157084867" type="System">
+                            <param id="0" name="Name">&quot;daftar&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">max_dialog - 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="150745046705063" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="426071116246646" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="344847523202615" type="System">
+                            <param id="0" name="Layout">daftarpustaka</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="782864464886263">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="814606779758224" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="385765099415659" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="572430904732320">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="679001780845004" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="468948192832173" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="112323127207709">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="972797289738060" type="Touch">
+                    <param id="0" name="Object">homebutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="909550278494332" type="homebutton">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596957042429004">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="675960466931820" type="Touch">
+                    <param id="0" name="Object">homebutton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="595676212523673" type="homebutton">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="542321598058131">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="110113049343924" type="System" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="451190120199609" type="Audio">
+                    <param id="0" name="Tag">&quot;all&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="797794210256697" type="Audio">
+                    <param id="0" name="Audio file">bensound-creativeminds</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;all&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="413949036055959" type="Audio">
+                    <param id="0" name="Tag">&quot;game&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551178105406153">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="887017218715589" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="702964339060482" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="155827808243384" type="System">
+                    <param id="0" name="Variable">dialog_end</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="854968464326528" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="579013666196737" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

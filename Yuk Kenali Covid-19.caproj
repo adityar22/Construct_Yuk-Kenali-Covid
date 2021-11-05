@@ -1,0 +1,974 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Yuk Kenali Covid-19</name>
+    <description>game yang membahas habis tentang covid-19</description>
+    <version>1.0.0.0</version>
+    <author>rctteam1</author>
+    <author-email>bintangshandy0909@gmail.com</author-email>
+    <author-website>www.rctki.com</author-website>
+    <app-id>com.rct.covid19</app-id>
+    <unique-id>1zplnar04chnz</unique-id>
+    <saved-with-version>26700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1080</width>
+        <height>1700</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>home</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Nothing (not recommended)</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="MENUENS_RITTLE" sid="222435517224491">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722299840987455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502024" original-source="D:\asset game pemilu\MENUENS_RITTLE.png">
+                        <collision-poly>
+                            <point x="0.0203704" y="0.0890688" />
+                            <point x="0.5" y="0" />
+                            <point x="0.97963" y="0.0890688" />
+                            <point x="0.963889" y="0.842105" />
+                            <point x="0.5" y="0.923077" />
+                            <point x="0.0361111" y="0.842105" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menugame_button_mulai" sid="920752440367232">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387057714611792" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\menugame_button_mulai.png">
+                        <collision-poly>
+                            <point x="0.0789474" y="0.122283" />
+                            <point x="0.5" y="0.0733696" />
+                            <point x="0.921053" y="0.122283" />
+                            <point x="0.952632" y="0.5" />
+                            <point x="0.922807" y="0.880435" />
+                            <point x="0.5" y="0.934783" />
+                            <point x="0.077193" y="0.880435" />
+                            <point x="0.0473684" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENUENS_bottom" sid="724997148304521">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="351798742307352" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="D:\asset game pemilu\MENUENS_bottom.png">
+                        <collision-poly>
+                            <point x="0.0388889" y="0.237288" />
+                            <point x="0.5" y="0.220339" />
+                            <point x="0.961111" y="0.237288" />
+                            <point x="0.999074" y="0.497175" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.000925926" y="0.497175" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENUENS_button_kanan" sid="179029197822141">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382333934053102" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501326" original-source="D:\asset game pemilu\MENUENS_button_kanan.png">
+                        <collision-poly>
+                            <point x="0.169065" y="0.124668" />
+                            <point x="0.5" y="0.0848806" />
+                            <point x="0.83813" y="0.119363" />
+                            <point x="0.920863" y="0.498674" />
+                            <point x="0.845324" y="0.885942" />
+                            <point x="0.5" y="0.925729" />
+                            <point x="0.165468" y="0.877984" />
+                            <point x="0.0971223" y="0.498674" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENUENS_button_kiri" sid="445585070941981">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203672188852278" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\MENUENS_button_kiri.png">
+                        <collision-poly>
+                            <point x="0.179856" y="0.132979" />
+                            <point x="0.5" y="0.106383" />
+                            <point x="0.81295" y="0.138298" />
+                            <point x="0.902878" y="0.5" />
+                            <point x="0.852518" y="0.890957" />
+                            <point x="0.5" y="0.949468" />
+                            <point x="0.140288" y="0.896277" />
+                            <point x="0.0791367" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENUENS_AR" sid="940087424693645">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="738291696570175" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500426" original-source="E:\CORONA\003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500426" original-source="E:\CORONA\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500426" original-source="E:\CORONA\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MENUENS_button_baca" sid="935502394650923">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466103115014178" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501326" original-source="D:\asset game pemilu\MENUENS_button_baca.png">
+                        <collision-poly>
+                            <point x="0.0824561" y="0.124668" />
+                            <point x="0.5" y="0.0848806" />
+                            <point x="0.917544" y="0.124668" />
+                            <point x="0.952632" y="0.498674" />
+                            <point x="0.919298" y="0.877984" />
+                            <point x="0.5" y="0.925729" />
+                            <point x="0.0807018" y="0.877984" />
+                            <point x="0.0473684" y="0.498674" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menugame_menu" sid="319556899462008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343214331757603" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\CORONA\444.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menugame_title" sid="727912764836070">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759550413076370" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501961" original-source="D:\asset game pemilu\menugame_title.png">
+                        <collision-poly>
+                            <point x="0.0203704" y="0.0862745" />
+                            <point x="0.5" y="0" />
+                            <point x="0.97963" y="0.0862745" />
+                            <point x="0.97963" y="0.498039" />
+                            <point x="0.960185" y="0.831373" />
+                            <point x="0.5" y="0.894118" />
+                            <point x="0.0398148" y="0.831373" />
+                            <point x="0.0203704" y="0.498039" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="867316460461683">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="home_bg" sid="986965943362789">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753618320245980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\PILIH\PILIH ASET_HOME\home_bg1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.908333" y="0.941765" />
+                            <point x="0.0916667" y="0.941765" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_board" sid="587640976430862">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="872395686553524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501199" original-source="E:\CORONA\projectcorona\Animations\home_board\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_board2" sid="667934519277888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294657938852209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\PILIH\PILIH ASET_HOME\home_board0.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.955556" y="0.945824" />
+                            <point x="0.0444444" y="0.945824" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_button" sid="932979411131661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469220225349869" speed="5">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.50079" original-source="E:\CORONA\0001.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_button2" sid="541709003389658">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628190414860075" speed="5">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.50079" original-source="E:\CORONA\0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_button3" sid="286280115099569">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="511146231248835" speed="5">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.50079" original-source="E:\CORONA\0003.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_button4" sid="787286944463980">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="861126687165868" speed="5">
+                    <frame duration="1" hotspotX="0.499136" hotspotY="0.481833" original-source="D:\asset game pemilu\PILIH\PILIH ASET_HOME\home_button4.png">
+                        <collision-poly>
+                            <point x="0.0379966" y="0.0252765" />
+                            <point x="0.499136" y="0.0015798" />
+                            <point x="0.962004" y="0.0236967" />
+                            <point x="0.998273" y="0.481833" />
+                            <point x="0.981001" y="0.957346" />
+                            <point x="0.499136" y="0.99842" />
+                            <point x="0.0189983" y="0.955766" />
+                            <point x="0.00172711" y="0.481833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="996725271480483">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="459207613089231">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="124705154671297" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.513514">
+                        <image-point name="Imagepoint 2" x="0.333333" y="0.513514" />
+                        <image-point name="Imagepoint 3" x="0.666667" y="0.513514" />
+                        <image-point name="Imagepoint 1" x="1" y="0.513514" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m1" sid="984530826553327">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="445614417460559" speed="5">
+                    <frame duration="1" hotspotX="1.02632" hotspotY="0.684211" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m2" sid="209726023879729">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981632737076979" speed="5">
+                    <frame duration="1" hotspotX="1.02632" hotspotY="0.684211" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="m3" sid="457560301771662">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283960914659372" speed="5">
+                    <frame duration="1" hotspotX="1.02632" hotspotY="0.684211" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="194080494812503">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="m4" sid="171684486456530">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868652250437655" speed="5">
+                    <frame duration="1" hotspotX="1.02632" hotspotY="0.684211" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kananslide" sid="733899666563546">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672989875480877" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kirislide" sid="687865046038233">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509224546466085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_bottomboard" sid="247444239289459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="248268663912559" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\asset game pemilu\game_bottomboard.png">
+                        <collision-poly>
+                            <point x="0.0324074" y="0.0708502" />
+                            <point x="0.967593" y="0.0708502" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\asset game pemilu\game_bottomwhennoquestioninvisualstorygameplay.png">
+                        <collision-poly>
+                            <point x="0.0342593" y="0.117834" />
+                            <point x="0.5" y="0.101911" />
+                            <point x="0.965741" y="0.117834" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_dialogboard" sid="863443793835456">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="989821680507849" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\CORONA\777.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_title_nohoax" sid="979203645577324">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="450232812195357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\game_title_nohoax.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.49789" />
+                            <point x="0.963889" y="0.835443" />
+                            <point x="0.5" y="0.898734" />
+                            <point x="0.0361111" y="0.835443" />
+                            <point x="0" y="0.49789" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_back" sid="600156885917097">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172105530401378" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\game_bgnohoax.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50051" original-source="D:\asset game pemilu\game_bg6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_ansboard" sid="805702827055623">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="dashboard" sid="155099812430060" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256288107309473" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.550633" original-source="D:\asset game pemilu\game_ansboard.png">
+                        <collision-poly>
+                            <point x="0.0166359" y="0.00632911" />
+                            <point x="0.983364" y="0.00632911" />
+                            <point x="0.999076" y="0.550633" />
+                            <point x="0.952865" y="0.886076" />
+                            <point x="0.0471349" y="0.886076" />
+                            <point x="0.000924214" y="0.550633" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_title_tatacara" sid="901544192519023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542900411967029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\game_title_tatacara.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.49789" />
+                            <point x="0.963889" y="0.835443" />
+                            <point x="0.5" y="0.898734" />
+                            <point x="0.0361111" y="0.835443" />
+                            <point x="0" y="0.49789" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_bottomwhennoquestioninvisualstorygameplay" sid="205375772195194">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403775702820899" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\game_bottomwhennoquestioninvisualstorygameplay.png">
+                        <collision-poly>
+                            <point x="0.0342593" y="0.117834" />
+                            <point x="0.5" y="0.101911" />
+                            <point x="0.965741" y="0.117834" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_home" sid="467738613255674">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277104697812361" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="D:\asset game pemilu\button_home.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.163842" />
+                            <point x="0.697917" y="0.327684" />
+                            <point x="0.864583" y="0.497175" />
+                            <point x="0.817708" y="0.80226" />
+                            <point x="0.5" y="0.621469" />
+                            <point x="0.208333" y="0.774011" />
+                            <point x="0.161458" y="0.497175" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_back" sid="900160488875145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302473335492233" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502415" original-source="D:\asset game pemilu\button_back.png">
+                        <collision-poly>
+                            <point x="0.344444" y="0.299517" />
+                            <point x="0.5" y="0.347826" />
+                            <point x="0.6" y="0.347826" />
+                            <point x="0.9" y="0.497585" />
+                            <point x="0.622222" y="0.671498" />
+                            <point x="0.5" y="0.671498" />
+                            <point x="0.333333" y="0.710145" />
+                            <point x="0.111111" y="0.497585" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gae_title_kenalicalon" sid="324468348791934">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951964434178834" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\game_title_nohoax.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\game_title_moneypolitic.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\gae_title_kenalicalon.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="167231452966896">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="AJAX" sid="833901836467189">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Function" sid="755349898969267">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="dialog" sid="144607384767841">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ans1" sid="404129995976973">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ansA" sid="467690031873690">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ansB" sid="405375652574104">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ens_title" sid="887259220872751">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="154626693760691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\ens_title.png">
+                        <collision-poly>
+                            <point x="0.0203704" y="0.0982143" />
+                            <point x="0.5" y="0" />
+                            <point x="0.97963" y="0.0982143" />
+                            <point x="0.97963" y="0.5" />
+                            <point x="0.962037" y="0.816964" />
+                            <point x="0.5" y="0.897321" />
+                            <point x="0.037963" y="0.816964" />
+                            <point x="0.0203704" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ens_board" sid="821670810598156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109812055674004" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\ens_board.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.797222" y="0.848128" />
+                            <point x="0.202778" y="0.848128" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maskot_ensiklopedia" sid="530651960813484">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="821373039138586">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="915500808596954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\maskot_ensiklopedia.png">
+                        <collision-poly>
+                            <point x="0.276" y="0.146186" />
+                            <point x="0.5" y="0.0286017" />
+                            <point x="0.896" y="0.0550847" />
+                            <point x="0.818" y="0.5" />
+                            <point x="0.724" y="0.853814" />
+                            <point x="0.5" y="0.82839" />
+                            <point x="0.396" y="0.790254" />
+                            <point x="0.308" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aikpu" sid="892148789909108">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="maskot_tatacara" sid="414929078287668">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="972629792338178">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456669513945066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\maskot_tatacara.png">
+                        <collision-poly>
+                            <point x="0.20283" y="0.0911017" />
+                            <point x="0.5" y="0.0455508" />
+                            <point x="0.846698" y="0.0688559" />
+                            <point x="0.910377" y="0.5" />
+                            <point x="0.945755" y="0.975636" />
+                            <point x="0.5" y="0.978814" />
+                            <point x="0.436321" y="0.804025" />
+                            <point x="0.408019" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_play" sid="549069966497603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934473554254389" speed="5">
+                    <frame duration="1" hotspotX="0.508721" hotspotY="0.555249" original-source="D:\asset game pemilu\PILIH\PILIH ASET\button_play.png">
+                        <collision-poly>
+                            <point x="0.130814" y="0.160221" />
+                            <point x="0.508721" y="0.00276243" />
+                            <point x="0.877907" y="0.168508" />
+                            <point x="0.994186" y="0.555249" />
+                            <point x="0.819767" y="0.88674" />
+                            <point x="0.508721" y="0.997238" />
+                            <point x="0.188953" y="0.895028" />
+                            <point x="0.00581395" y="0.555249" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_home2" sid="765675890364379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367420831798739" speed="5">
+                    <frame duration="1" hotspotX="0.508721" hotspotY="0.555249" original-source="D:\asset game pemilu\PILIH\PILIH ASET\button_home2.png">
+                        <collision-poly>
+                            <point x="0.156977" y="0.135359" />
+                            <point x="0.508721" y="0.00276243" />
+                            <point x="0.851744" y="0.143646" />
+                            <point x="0.994186" y="0.555249" />
+                            <point x="0.790698" y="0.90884" />
+                            <point x="0.508721" y="0.997238" />
+                            <point x="0.22093" y="0.914365" />
+                            <point x="0.00581395" y="0.555249" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="skorobj" sid="191874891354782">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox" sid="531026926441286">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="textskorrrr" sid="759743809946968">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="maskot_nohoax2" sid="137308703311740">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="993488503238083">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="514482119317166">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="336915979562454" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\PILIH\PILIH ASET\maskot_nohoax.png">
+                        <collision-poly>
+                            <point x="0.205729" y="0.0836864" />
+                            <point x="0.5" y="0.032839" />
+                            <point x="0.791667" y="0.0847458" />
+                            <point x="0.911458" y="0.5" />
+                            <point x="0.695313" y="0.876059" />
+                            <point x="0.307292" y="0.875" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\maskot_moneypolitic.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\maskot_kenalicalon.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox2" sid="463005678490341">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="kata2skor" sid="264636744772156">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="499445447929739">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="109742103095829">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="daftarPustaka_title" sid="338772335978365">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240692744589840" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\ASET PILIH\daftar pustaka_title.png">
+                        <collision-poly>
+                            <point x="0.0203704" y="0.0956522" />
+                            <point x="0.5" y="0" />
+                            <point x="0.97963" y="0.0956522" />
+                            <point x="0.964815" y="0.834783" />
+                            <point x="0.5" y="0.926087" />
+                            <point x="0.0351852" y="0.834783" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_button" sid="447803558671874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823937221160721" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="G:\ASET PILIH\about_button.png">
+                        <collision-poly>
+                            <point x="0.0375" y="0.16" />
+                            <point x="0.5" y="0.0666667" />
+                            <point x="0.960417" y="0.168889" />
+                            <point x="0.973958" y="0.497778" />
+                            <point x="0.958333" y="0.822222" />
+                            <point x="0.5" y="0.915556" />
+                            <point x="0.040625" y="0.826667" />
+                            <point x="0.0229167" y="0.497778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_bg" sid="915976877563698">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129786350313701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\ASET PILIH\about_bg.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.961111" y="0.975294" />
+                            <point x="0.0388889" y="0.975294" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_title" sid="279364156337612">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459727018975916" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\ASET PILIH\about_title.png">
+                        <collision-poly>
+                            <point x="0.0203704" y="0.0932203" />
+                            <point x="0.5" y="0" />
+                            <point x="0.97963" y="0.0932203" />
+                            <point x="0.97963" y="0.5" />
+                            <point x="0.962037" y="0.826271" />
+                            <point x="0.5" y="0.902542" />
+                            <point x="0.037963" y="0.826271" />
+                            <point x="0.0203704" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_" sid="675503387730144">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498074837480730" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\ASET PILIH\about_1.png">
+                        <collision-poly>
+                            <point x="0.0108225" y="0.0331126" />
+                            <point x="0.5" y="0.261589" />
+                            <point x="0.914502" y="0.261589" />
+                            <point x="0.980519" y="0.5" />
+                            <point x="0.959957" y="0.877483" />
+                            <point x="0.0108225" y="0.966887" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_2" sid="764248184195135">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582645129644443" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="G:\ASET PILIH\about_3.png">
+                        <collision-poly>
+                            <point x="0.0119048" y="0.0363036" />
+                            <point x="0.5" y="0.264026" />
+                            <point x="0.91342" y="0.264026" />
+                            <point x="0.980519" y="0.49835" />
+                            <point x="0.959957" y="0.877888" />
+                            <point x="0.0108225" y="0.966997" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_3" sid="422769925495140">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535660125579321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501618" original-source="G:\ASET PILIH\about_2.png">
+                        <collision-poly>
+                            <point x="0.011828" y="0.0355987" />
+                            <point x="0.5" y="0.2589" />
+                            <point x="0.913979" y="0.2589" />
+                            <point x="0.974194" y="0.498382" />
+                            <point x="0.953763" y="0.860841" />
+                            <point x="0.0172043" y="0.94822" />
+                            <point x="0" y="0.498382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about_text" sid="841592389990071">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284560761678145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\asset game pemilu\PILIH\PILIH ASETt\about_text.png">
+                        <collision-poly>
+                            <point x="0.0351852" y="0.0838852" />
+                            <point x="0.975" y="0.0596026" />
+                            <point x="1" y="0.498896" />
+                            <point x="0.966667" y="0.92053" />
+                            <point x="0.0416667" y="0.900662" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_title_tatacara2" sid="261175502480080">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785419771674049" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50211" original-source="D:\asset game pemilu\game_title_tatacara.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.49789" />
+                            <point x="0.963889" y="0.835443" />
+                            <point x="0.5" y="0.898734" />
+                            <point x="0.0361111" y="0.835443" />
+                            <point x="0" y="0.49789" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="button" plugin-id="Sprite" sid="610541742431938">
+            <members>
+                <member>about_button</member>
+                <member>button_back</member>
+                <member>button_home</member>
+                <member>button_home2</member>
+                <member>button_play</member>
+                <member>MENUENS_button_baca</member>
+                <member>MENUENS_button_kanan</member>
+                <member>MENUENS_button_kiri</member>
+                <member>menugame_button_mulai</member>
+            </members>
+        </family>
+        <family name="homebutton" plugin-id="Sprite" sid="388301458365453">
+            <members>
+                <member>home_button</member>
+                <member>home_button2</member>
+                <member>home_button3</member>
+                <member>home_button4</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>menuensiklo.xml</layout>
+        <layout>ensi.xml</layout>
+        <layout>home.xml</layout>
+        <layout>menugamegame.xml</layout>
+        <layout>game.xml</layout>
+        <layout>tatacara.xml</layout>
+        <layout>daftarpustaka.xml</layout>
+        <layout>aboutus.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ensimenulES.xml</event-sheet>
+        <event-sheet>gamemenuES.xml</event-sheet>
+        <event-sheet>homeES.xml</event-sheet>
+        <event-sheet>gameES.xml</event-sheet>
+        <event-sheet>ensiES.xml</event-sheet>
+        <event-sheet>tatacaraES.xml</event-sheet>
+        <event-sheet>daftar.xml</event-sheet>
+        <event-sheet>about us.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="12">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="24" />
+        <global-instance type="AJAX" uid="42" />
+        <global-instance type="Function" uid="43" />
+        <global-instance type="Audio" uid="64">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="bensound-acousticbreeze.ogg" />
+        <file name="bensound-creativeminds.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="nohoax.txt" />
+        <file name="kenapa harus memilih.txt" />
+        <file name="kilas balik.txt" />
+        <file name="tata cara.txt" />
+        <file name="Money Politic.txt" />
+        <file name="referensi.txt" />
+        <file name="kenali calon.txt" />
+        <file name="apa itu kpu.txt" />
+    </files-folder>
+</c2project>

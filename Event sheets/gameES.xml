@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameES</name>
+    <events>
+        <variable constant="0" name="framemaskot" sid="481183881481118" static="0" type="number">0</variable>
+        <variable constant="0" name="titleatasgame" sid="339804910576356" static="0" type="number">0</variable>
+        <variable constant="0" name="jawaban" sid="812940287947027" static="0" type="text"></variable>
+        <variable constant="0" name="question" sid="390941936449202" static="0" type="number">0</variable>
+        <variable constant="0" name="story_end" sid="480027012929884" static="0" type="number">0</variable>
+        <variable constant="0" name="keyword" sid="982730225020862" static="0" type="text">&quot;&quot;</variable>
+        <variable constant="0" name="dialog_end" sid="676044053508452" static="0" type="number">0</variable>
+        <variable constant="0" name="skor" sid="120704353734408" static="0" type="number">0</variable>
+        <variable constant="0" name="dialog_line" sid="398386211063961" static="0" type="number">3</variable>
+        <variable constant="0" name="framebg" sid="195650792794670" static="0" type="number">0</variable>
+        <variable constant="0" name="dialog" sid="263182476324476" static="0" type="number">0</variable>
+        <event-block sid="573832844282171">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="144592175240496" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="428174452242165" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="160890248486075" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="142318618522832" type="System">
+                    <param id="0" name="Variable">question</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="123866511755151" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="668914069133407" type="Function">
+                    <param id="0" name="Name">&quot;dialog&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-12" name="Set group active" sid="199269758160006" type="System">
+                    <param id="0" name="Group name">&quot;dialog&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="482510502541244" type="System">
+                    <param id="0" name="Group name">&quot;tap&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="928681452717066" type="System">
+                    <param id="0" name="Group name">&quot;ans&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="927368169411709" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="608482555194323" type="System">
+                    <param id="0" name="Layer">&quot;kotak jawaban&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="349220426519624" type="gae_title_kenalicalon">
+                    <param id="0" name="Frame number">titleatasgame</param>
+                </action>
+                <action id="5" name="Set frame" sid="744200531191610" type="game_bottomboard">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="574744010674296" type="maskot_nohoax2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316035530342170">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="352283389261528" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="300040156199937" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="567244679668674">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="896268777505172" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="511297894063134" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Kodingan Summon Text Dialog</comment>
+        <event-group description="" sid="885084544791995" title="dialog">
+            <sub-events>
+                <event-block sid="696248245859014">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="853494577261828" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="158875337598100" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="399652103297436">
+                    <conditions>
+                        <condition id="0" name="On function" sid="209279408429505" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="758079946542201" type="System">
+                            <param id="0" name="Variable">framebg</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(dialog),1,&quot;;&quot;))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="171852300852888">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="752045305216339" type="System">
+                                    <param id="0" name="Interval (seconds)">0.002</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="526795671163248" type="dialog">
+                                    <param id="0" name="Text">left(trim(tokenat(Array.At(dialog),dialog_line,&quot;;&quot;)),len(dialog.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Kodingan Tap Next Dialog Line</comment>
+        <event-group description="" sid="622004814763622" title="tap">
+            <sub-events>
+                <event-block sid="777594031044893">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="938389945671890" type="Touch">
+                            <param id="0" name="Object">dialog</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="688089822469899" type="dialog">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="524593081679896" type="System">
+                            <param id="0" name="Variable">dialog_line</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="923741545694911" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Inisialisasi batas Line Dialog, Frame Background</comment>
+        <event-block sid="495794949223078">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="277989642323138" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="799419694568660" type="System">
+                    <param id="0" name="Variable">dialog_end</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(dialog),0,&quot;;&quot;))</param>
+                </action>
+                <action id="5" name="Set frame" sid="793465835787061" type="game_back">
+                    <param id="0" name="Frame number">framebg</param>
+                </action>
+                <action id="0" name="Set text" sid="398338883096878" type="skorobj">
+                    <param id="0" name="Text">skor</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Inisialisasi Lanjut Dialog Baru dan Question Summon</comment>
+        <event-block sid="175391468653990">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="296383114782713" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">dialog_end</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="919353198668890" type="System">
+                    <param id="0" name="Variable">dialog_end</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="584779213932860" type="System">
+                    <param id="0" name="Group name">&quot;dialog&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="145111128224509" type="System">
+                    <param id="0" name="Group name">&quot;tap&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="805686842006030" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="764770357408993" type="Function">
+                    <param id="0" name="Name">&quot;question&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Kodingan Summon Soal</comment>
+        <event-block sid="252175196566496">
+            <conditions>
+                <condition id="0" name="On function" sid="545374052284559" type="Function">
+                    <param id="0" name="Name">&quot;question&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="348275917415450" type="System">
+                    <param id="0" name="Group name">&quot;ans&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="993640449840257" type="System">
+                    <param id="0" name="Variable">keyword</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(dialog),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="795729731584247" type="dialog">
+                    <param id="0" name="Text">trim(tokenat(Array.At(dialog),1,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="567335918247188" type="ansA">
+                    <param id="0" name="Text">trim(tokenat(Array.At(dialog),2,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="657734806190450" type="ansB">
+                    <param id="0" name="Text">trim(tokenat(Array.At(dialog),3,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Kodingan Tap Jawaban</comment>
+        <event-group description="" inactive="1" sid="106243144602657" title="ans">
+            <sub-events>
+                <event-block sid="174637655012102">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="676608046637417" type="Touch">
+                            <param id="0" name="Object">ansA</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="108465139451793" type="System">
+                            <param id="0" name="Variable">jawaban</param>
+                            <param id="1" name="Value">ansA.Text</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="429975622540949" type="System">
+                            <param id="0" name="Layer">&quot;kotak jawaban&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="339570207913512" type="game_bottomboard">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="792267612751421" type="maskot_nohoax2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="169889406202942" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="743020667758752" type="dialog">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="487597711057108" type="ansA">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="860165757087853" type="ansB">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="434960809795948" type="System">
+                            <param id="0" name="Group name">&quot;dA&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="267949316216764" type="System">
+                            <param id="0" name="Group name">&quot;ans&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="897539768690094">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="501510528994595" type="Touch">
+                            <param id="0" name="Object">ansB</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="765487327883347" type="System">
+                            <param id="0" name="Variable">jawaban</param>
+                            <param id="1" name="Value">ansB.Text</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="789060208961875" type="System">
+                            <param id="0" name="Layer">&quot;kotak jawaban&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="206383130549079" type="game_bottomboard">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="209317508086180" type="maskot_nohoax2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="406546427845546" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="341117991957067" type="dialog">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="244232351130102" type="ansA">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="265170281410497" type="ansB">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="233946765747378" type="System">
+                            <param id="0" name="Group name">&quot;dB&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="643656911095520" type="System">
+                            <param id="0" name="Group name">&quot;ans&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="736580387886761" title="dA">
+            <sub-events>
+                <event-block sid="679223812635059">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="193036756764288" type="System">
+                            <param id="0" name="Interval (seconds)">0.002</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="838979259376333" type="dialog">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(dialog),4,&quot;;&quot;)), len(dialog.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="325569669259981">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="661733859737420" type="dialog">
+                            <param id="0" name="Text to compare">trim(tokenat(Array.At(dialog),4,&quot;;&quot;))</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="221669705318477" type="System">
+                            <param id="0" name="Group name">&quot;tap_ans&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="469945778559464" type="System">
+                            <param id="0" name="Group name">&quot;dA&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="417559921551020" title="dB">
+            <sub-events>
+                <event-block sid="990280899226291">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="836459870801513" type="System">
+                            <param id="0" name="Interval (seconds)">0.002</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="401609617464948" type="dialog">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(dialog),5,&quot;;&quot;)), len(dialog.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632896455749196">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="896469987743248" type="dialog">
+                            <param id="0" name="Text to compare">trim(tokenat(Array.At(dialog),5,&quot;;&quot;))</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="292021922814352" type="System">
+                            <param id="0" name="Group name">&quot;tap_ans&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="121811260796045" type="System">
+                            <param id="0" name="Group name">&quot;dB&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="894252924222747" title="tap_ans">
+            <sub-events>
+                <event-block sid="834816056289176">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="535553201729518" type="Touch">
+                            <param id="0" name="Object">dialog</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="662018717230828" type="System">
+                            <param id="0" name="Variable">question</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="851061761523497" type="Function">
+                            <param id="0" name="Name">&quot;ans&quot;</param>
+                            <param id="1" name="Parameter {n}">jawaban</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="501509302631396" type="System">
+                            <param id="0" name="Group name">&quot;tap_ans&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Kodingan Kunci Jawaban</comment>
+        <event-block sid="505739149806244">
+            <conditions>
+                <condition id="0" name="On function" sid="468898536137421" type="Function">
+                    <param id="0" name="Name">&quot;ans&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="965202510863518">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="682983607829311" type="System">
+                            <param id="0" name="Variable">keyword</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">jawaban</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="371210390995016" type="dialog">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="230556135433155" type="System">
+                            <param id="0" name="Variable">skor</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="985484446665525" type="System">
+                            <param id="0" name="Variable">dialog</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="804278492167566" type="System">
+                            <param id="0" name="Variable">dialog_line</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="105963424548358" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="513766580426575" type="System">
+                            <param id="0" name="Group name">&quot;dialog&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="309171683109353" type="System">
+                            <param id="0" name="Group name">&quot;tap&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="292931088976649">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="477067608225280" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="621861061350820" type="dialog">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="477309349695926" type="System">
+                            <param id="0" name="Variable">dialog</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="675318338111090" type="System">
+                            <param id="0" name="Variable">dialog_line</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="485305042657831" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="843566418716087" type="System">
+                            <param id="0" name="Group name">&quot;dialog&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="551303523581264" type="System">
+                            <param id="0" name="Group name">&quot;tap&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>INISIALISASI FINISH</comment>
+        <event-block sid="559963322418979">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="468643102635984" type="System">
+                    <param id="0" name="Variable">question</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="187475163019800" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="839362887057296">
+            <conditions>
+                <condition id="17" name="On tap object" sid="966155511331765" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="700242790793910" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346844456400278">
+            <conditions>
+                <condition id="17" name="On tap object" sid="777927722045374" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="897109834353587" type="System">
+                    <param id="0" name="Layout">menugamegame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="246277694433747">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="556954960220109" type="System">
+                    <param id="0" name="First value">dialog_end</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">dialog_line</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="382411621740165" type="maskot_nohoax2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="750393464248608">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="923469851613874" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="687719438135567" type="maskot_nohoax2">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856018198902312">
+            <conditions>
+                <condition behavior="LiteTween2" id="4" name="On tween end" sid="170403836252904" type="maskot_nohoax2" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="309930041792186" type="System">
+                    <param id="0" name="Layer">&quot;kotak jawaban&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="673522598286450" type="game_bottomboard">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586860739326789">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="907316943939854" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="160866096766971">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="102033979700904" type="Touch">
+                            <param id="0" name="Object">button_play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="794627114927478" type="System">
+                            <param id="0" name="Variable">skor</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="410875337925757" type="System">
+                            <param id="0" name="Variable">question</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="525150488505003" type="System">
+                            <param id="0" name="Variable">dialog_line</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="275727398740419" type="System">
+                            <param id="0" name="Variable">dialog</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="540405346199901" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="374903213540541" type="System">
+                            <param id="0" name="Group name">&quot;dialog&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="579029002935734" type="System">
+                            <param id="0" name="Group name">&quot;tap&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="405330833503245" type="System">
+                            <param id="0" name="Group name">&quot;ans&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="987053451211081" type="System">
+                            <param id="0" name="Layer">&quot;popup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="229896907231864" type="System">
+                            <param id="0" name="Layer">&quot;kotak jawaban&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="558380542720255" type="gae_title_kenalicalon">
+                            <param id="0" name="Frame number">titleatasgame</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="703150322828962" type="game_bottomboard">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="318477124109071" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="239557287938736" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>kodingan kata2 menurut jumlah skot</comment>
+        <event-block sid="486867368359760">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="358197020062573" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="920918709725888" type="kata2skor">
+                    <param id="0" name="Text">&quot;luar biasa, kamu telah memahami betapa pentingnya pencegahan covid-19 untuk melawan wabah yang tengah terjadi saat ini&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653821018261358">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="448310833793150" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">90</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="315059010639510" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="144911834557441" type="kata2skor">
+                    <param id="0" name="Text">&quot;habat, kamu telah mengetahui banyak hal tentang covid-19 dan tindakan pencegahannya&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494070172315874">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="719166523812984" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">70</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="546759136059863" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">60</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="554429847361532" type="kata2skor">
+                    <param id="0" name="Text">&quot;bagus, kamu telah mengenal apa itu covid-19 dan bahaya yang ditimbulkan dari wabah tersebut&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="736411934113321">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="223515571049137" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="761021179045471" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="124079398642303" type="kata2skor">
+                    <param id="0" name="Text">&quot;kamu harus lebih memepelajari dan memahami apa itu covid-19 dan betapa pentingnya mencegah penyebarannya&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="981099299261100">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="928757683595578" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="399573706957753" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="647370493431508" type="kata2skor">
+                    <param id="0" name="Text">&quot;kamu harus mengurangi tindakan apatis tentang tindakan pencegahan dan harus bisa ikut berpartisipasi dalam mencegah penyebaran wabah covid-19&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115015974355442">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="397949715223359" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="646063414674514" type="kata2skor">
+                    <param id="0" name="Text">&quot;kamu harus mengulang lagi permainan ini dan lebih menghargai betapa pentingnya tindakan pencegahan wabah covid-19&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>logika set frame maskot sesuai global variable framemaskot</comment>
+        <event-block sid="103921650115237">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="881949747837999" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="889577285432538" type="maskot_nohoax2">
+                    <param id="0" name="Frame number">framemaskot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="375052844510564">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="906718907469467" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="815214232661634" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

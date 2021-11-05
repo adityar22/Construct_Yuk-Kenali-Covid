@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>tatacaraES</name>
+    <events>
+        <event-block sid="266097503669970">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="968431387153400" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="228796081485346" type="System">
+                    <param id="0" name="Variable">skor</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="876559692323730" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="923396615739585" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="415791616174336" type="Function">
+                    <param id="0" name="Name">&quot;dialog&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="914734599044277" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="806661233474387" title="dialog2">
+            <sub-events>
+                <event-block sid="643022500319890">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="277125462771510" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="524456908220999" type="System">
+                            <param id="0" name="Variable">dialog_end</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(dialog),0,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="537080617833197" type="System">
+                            <param id="0" name="Variable">framebg</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(dialog),1,&quot;;&quot;))</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="398201124853074" type="game_back">
+                            <param id="0" name="Frame number">framebg</param>
+                        </action>
+                        <action id="0" name="Call function" sid="846324742743294" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="423339523585581">
+                    <conditions>
+                        <condition id="0" name="On function" sid="443692232689796" type="Function">
+                            <param id="0" name="Name">&quot;dialog&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="521651378784856">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="761334803393995" type="System">
+                                    <param id="0" name="Interval (seconds)">0.002</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="984997993533947" type="dialog">
+                                    <param id="0" name="Text">left(trim(tokenat(Array.At(dialog),dialog_line,&quot;;&quot;)),len(dialog.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="670819399493525">
+            <conditions>
+                <condition id="17" name="On tap object" sid="769039470485995" type="Touch">
+                    <param id="0" name="Object">dialog</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="548368926163876" type="dialog">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="462015934336230" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="927377316206896" type="Function">
+                    <param id="0" name="Name">&quot;dialog&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="703484566342303">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="306120166469651" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">dialog_end</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="230584539400189" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="427773145274264" type="System">
+                    <param id="0" name="Variable">dialog_line</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Call function" sid="382356797643021" type="Function">
+                    <param id="0" name="Name">&quot;question&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="936250152016384">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="608160283151036" type="System">
+                    <param id="0" name="Variable">dialog</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="480993695283000" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="152180241443120">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="333511240347812" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="957735729030732" type="button">
+                    <param id="0" name="Scale">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="883047198304495">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="645998090051333" type="Touch">
+                    <param id="0" name="Object">button</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="668031787929472" type="button">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355946018474256">
+            <conditions>
+                <condition id="17" name="On tap object" sid="731210754708761" type="Touch">
+                    <param id="0" name="Object">button_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="369023042996659" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="361912741772643">
+            <conditions>
+                <condition id="17" name="On tap object" sid="267296286680701" type="Touch">
+                    <param id="0" name="Object">button_back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="543493015614519" type="System">
+                    <param id="0" name="Layout">home</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491183304287582">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="614942201269930" type="System">
+                    <param id="0" name="Layer">&quot;popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="564488512035705">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="770201739527322" type="Touch">
+                            <param id="0" name="Object">button_play</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="515164968078637" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

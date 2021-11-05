@@ -1,0 +1,130 @@
+8;
+3;
+Hai, perkenalkan namaku Luna;
+Apa kabar kalian sobat Pilih? Semoga selalu dalam kondisi yang baik dan sehat selalu!;
+Selamat datang di ruang kerjaku, aku bekerja sebagai pengamat sosial;
+Ya, aku sudah banyak melakukan sosial eksperimen dan mengamati data-data seputar kehidupan sosial masyarakat;
+Belakangan ini, sesuai dengan momen pesta demokrasi yang sedang berlangsung, masyarakat ramai membicarakan tentang calon-calon yang berpartisipasi dalam pemilihan tahun ini;
+Banyak yang mendiskusikan caleg mana yang ingin mereka pilih;
+|
+Menurutku hal itu baik untuk mengenal dan mendapat info seputar caleg;
+Bagiamana menurutmu tentang banyaknya pembicaraan seputar caleg?;
+Menurutku hal itu baik untuk mengenal dan mendapat info seputar caleg;
+Hal itu tidak perlu dipikirkan atau dibicarakan;
+Ya, selagi hal itu tidak menyimpang dari berita sebenarnya pembicaraan seputar caleg berguna untuk mencari tau info seputar caleg;
+Mengapa? Bukannya hal tersebut dapat berhuna untuk lebih mengenal caleg-caleg dalam pemilu selama kita dapat menyaring berita mana yang benar dan tidak;
+|
+4;
+3;
+Sebagai pemilih kita tentunya harus mengenali calon mana yang akan kita pilih;
+Mengenali calon yang dipilih juga tentunya dapat membantu kita agar memilih calon yang tepat;
+|
+Hal tersebut tentu sangat penting bagi kita para pemilih;
+Apa yang kau pikirkan mengenai pengenalan calon dalam pemilu?;
+Hal tersebut tentu sangat penting bagi kita para pemilih;
+Hal itu tidak terlalu penting karena tidak berpengaruh pada pemilu;
+Ya, benar sekali dengan mengenali calon kita dapat memahami apa yang menjadi tujuan mereka;
+Tentu saja itu tidak benar, karena bagi pemilih mengenali calon legislatif merupakan tugas yang sangat penting;
+|
+5;
+3;
+Dengan mengenali data calon kita dapat mengenal bagaimana jadinya saat mereka terpilih;
+Lalu kita juga perlu mengenal mereka dari latar belakang mereka;
+banyak sumber atau berita yang bisa kita lihat untuk mengenal calon-calon wakil rakyat;
+|
+Ya, dari memilah berita-berita yang ada kita dapat mengenali caleg dengan lebih baik;
+Kita dapat mengenal calon legislatif dari berita-berita terbaru seputar mereka atau partainya;
+Info di berita-berita tersebut tidak membantu sama sekali;
+Ya, dari memilah berita-berita yang ada kita dapat mengenali caleg dengan lebih baik;
+Justru tanpa berita tersebut kita tidak memiliki banyak info seputar caleg atau partainya;
+Ya, kita bisa melihat profil dari calon-calon yang ada;
+|
+5;
+3;
+Tentunya kita harus mencari info tersebut dari sumber yang terpercaya;
+Jika tidak, akan ditakutkan berita yang kita peroleh tidak sesuai dengan data sebenarnya;
+Hal tersebut justru membuat arah pilihan kita salah karena info yang kita peroleh salah;
+|
+Kita dapat melihat info dari website atau media terpercaya;
+Banyak info seputar calon yang beredar, tetapi banyak info terseut tidak tepat. Bagaimana menurutmu?;
+Kita dapat melihat info dari website atau media terpercaya;
+Info yang tidak tepat tersebut tidak terlalu berpengaruh terhadap pilihan masyarakat;
+Benar, kita harus memilah dan memastikan info tersebut benar adanya sesuai data yang resmi dan terpercaya;
+Aku pikir jika masyarakat tidak mengetahui info mana yang tepat dan tidak tepat, hal itu dapat membuat pemikiran masayarakat terhadap suatu pihak tidak tepat juga;
+|
+5;
+3;
+Dengan adanya situs resmi dan info data dari tiap calon, kita dapat melihat riwayat atau profil dari calon tersebut;
+Sehingga kita dapat melihat calon mana yang memiliki pengalaman baik untuk menjadi wakil rakyat;
+Serta kita bisa mengetahui keunggulan atau kemampuan dari tiap calon serta prestasi apa saja yang telah dia peroleh;
+|
+Ya, itu benar karena dengan poin-poin tersebut kita dapat lebih pintar dalam memilih calon yang ada;
+Dengan mengetahui profil baik itu riwayat pendidikan, pekerjaan maupun pengalam yang telah diperoleh oleh calon legislatif, kita dapat lebih bijak dalam memilih;
+Ya, itu benar karena dengan poin-poin tersebut kita dapat lebih pintar dalam memilih calon yang ada;
+Poin-poin tersebut tidak terlalu membantu karena itu hanyalah data dari riwayat mereka;
+Tentu, dengan begitu kita akan lebih pintar dalam memilih wakil rakyat yang akan menyalurkan aspirasi dari masyarakat;
+Menurutku poin-poin itu sangat membantu kita dalam menentukan pilihan kita untuk mewakili suara rakyat dala membangun bangsa ini;
+|
+4;
+3;
+Lalu kita juga harus mengetahui program-program apa saja yang mereka miliki untuk kemajuan bangsa;
+Dan juga pastikan program-progra mereka sesuai dengan apa yang dibutuhkan oleh masyarakat;
+|
+Aku setuju karena kita harus memilih calon yang tau apa yang dibutuhkan rakyatnya;
+Dari program-program dari tiap calon, itu dapat membantu kita menentukan wakil rakyat mana yang kita butuhkan;
+Aku setuju karena kita harus memilih calon yang tau apa yang dibutuhkan rakyatnya;
+Tidak juga, karena program-program dari mereka tidak terlalu menentukan kualitas mereka;
+Ya, hal itulah yang menjadi pertimbangan bagi kita dalam menentukan pilihan mereka;
+Program-program yang mereka buat justru sangat membantu kita dalam melihat calon mana yang memiliki pemikiran yang baik dan lurus ke depan;
+|
+5;
+3;
+Dengan mengenali calon melalui program yang mereka buat, tentunya hal itu membantu kita dalam memilah calon mana yang memiliki pemikiran baik;
+Dari hal tersebut kita juga dapat melihat akan ke arah mana mereka membawa suara yang telah kita berikan;
+Lalu kita juga dapat mengenali calon yang akan kita pilih melalui bagaimana cara dia melakukan kampanye;
+|
+Ya, salah satunya bagaimana mereka mensosialisasikan program mereka;
+Dari kegiatan-kegiatan selama kampanye banyak hal yang bisa kita nilai dari calon-calon legislatif;
+Ya, salah satunya bagaimana mereka mensosialisasikan program mereka;
+Sepertinya tidak karena hal itu sulit dan tidak perlu dinilai;
+Benar sekali, bagaimana cara atau alur yang mereka ambil selama kampanye dapat dinilai;
+Tentu saja hal itu salah karena saat masa kampanyelah kita dapat mengenali calon yang akan kita pilih;
+|
+4;
+3;
+Dari masa kampanye kita perlu menilai dengan benar bagaimana perilaku dan pola pikir dari tiap calon;
+KIta dapat melihat bagaimana tata cara mereka dalam memperkenalkan diri mereka serta menyampaikan program kerja mereka;
+|
+Menurutku calon yang baik yaitu yang melakukan kampanye dengan benar;
+Menurutmu bagaimana cara mengenali calon yang baik melalui kampanye?;
+Menurutku calon yang baik yaitu yang melakukan kampanye dengan benar;
+Menurutku kita hanya perlu melihat dari siapa yang berkampanye;
+Ya, jika mereka bersosialisasi dengan baik dan menyampaikan apa yang menjadi program merek dengan tepat tentunya mereka adalah caon yang baik;
+Namun hal itu perlu didukung dengan bagaimana cara mereka bersosialisasi dengan masyarakat dan melakukan kampanye dengan baik dan bersih;
+|
+6;
+3;
+Jika caleg berkampanye dengan jalan yang tepat atau tidak menggunakan jalan yang tidak tepat seperti money politik atau terdapat unsur pemaksaan;
+Jika ditemukan caleg yang menggunakan jalan yang tidak tepat tentunya itu merupakan penilaian bagi kita bahwa dia belum tepat kita pilih sebagai wakil rakyat;
+Karena dari perilaku dan pola pikir merupakan poin yang sangat penting dalam menentukan pilihan kita;
+Dan kembali kepada kita para pemilih bagaimana memilah calon yang tepat untuk mewakli suara kita;
+|
+Menurutku banyak pengaruh baik yang kita dapat dalam mengenali calon wakil rakyat;
+Bagaimanakah menurutmu pengaruh dari yang kita lakukan dalam mengenali calon?;
+Tentu saja tidak banyak pengaruh yang kita dapat;
+Menurutku banyak pengaruh baik yang kita dapat dalam mengenali calon wakil rakyat;
+Justru sebaliknya, begitu banyak pengaruh yang kita dapat dalam mengenali calon wakil rakyat;
+Ya, benar sekali! Dengan mengenali siapa saja yang menjadi calon-calon dala pemilu, kita dapat membuat pilihan yang lebih bijak;
+|
+4;
+3;
+Ya, oleh karena itu kita harus pintar dalam mengenali calon wakil rakyat;
+Dengan begitu kita dapat menjadi pemilih yang pintar dalam memilih kepada siapa kita emberikan suara untuk mewakili aspirasi kita sebagai masyarakat;
+|
+Itu merupakan hal yang penting dan harus dilakukan oleh pemilih;
+Jadi hal apa yang kau dapatkan dari pentingnya mengenal calon dalam pemilu;
+Itu merupakan hal yang penting dan harus dilakukan oleh pemilih;
+Tidak ada ketentuan pasti yang didapatkan dari mengenali calon-calon dalam pemilu;
+Ya, tepat sekali! Dengan mengenali calon-calon dalam pemilu kita mendapat banyak hal untuk menjadi pertimbangan dalam memilih;
+Menurutku banyak hal yang kita dapatkan dari mengenali calon wakil rakyat, jadi kita harus mengenali calonnya sebelum memilih;
+|
